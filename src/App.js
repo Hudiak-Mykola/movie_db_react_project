@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect} from 'react';
+import {Routes, Route, Navigate} from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import {Header, HomePage, MovieDetails} from "./components";
+import './App.css'
+
+const App = () => {
+
+    //My Theme
+
+    useEffect(() => {
+        const theme = localStorage.getItem("theme");
+        if (theme === "white") {
+            document.body.classList.add("white")
+        }
+    }, []);
+
+    return (
+        <Routes>
+            <Route path={'/'} element={<Header/>}>
+                <Route index element={<Navigate to={'/home'}/>}/>
+                <Route path={'home'} element={<HomePage/>}/>
+                <Route path={'home/movie_details'} element={<MovieDetails/>}/>
+            </Route>
+        </Routes>
+    );
+};
 
 export default App;

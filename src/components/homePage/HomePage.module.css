@@ -1,0 +1,55 @@
+.wrapWholePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.InputMain {
+    width: 70%;
+    margin-top: 10px;
+}
+
+.Input {
+    width: 100%;
+    height: 30px;
+    background-color: #337ea6;
+    border-radius: 8px;
+    border: none;
+}
+
+.Input::placeholder {
+    color: white;
+    padding-left: 10px;
+}
+
+
+.ListOfMovies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ButtonsPrewNext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.btnGenres {
+    column-gap: 5px;
+    display: flex;
+    overflow: auto;
+    width: 90%;
+    justify-content: flex-start;
+    margin: 10px;
+}
+
+.btnGenres::-webkit-scrollbar {
+    display: none;
+}
+
+.ButtonPrew, .ButtonNext {
+    width: 100px;
+    height: 30px;
+}

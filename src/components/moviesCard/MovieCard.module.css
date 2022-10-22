@@ -1,0 +1,38 @@
+.MainMovieCard {
+    padding-top: 4px;
+    width: 210px;
+    height: 400px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-image: linear-gradient(335deg, rgba(0, 0, 0, 1) -10.7%, rgba(53, 92, 125, 1) 88.8%);
+    -webkit-box-shadow: 10px 10px 35px -12px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 10px 10px 35px -12px rgba(0, 0, 0, 1);
+    box-shadow: 10px 10px 35px -12px rgba(0, 0, 0, 1);
+}
+
+
+.Overview {
+    font-size: 20px;
+}
+
+.MainMovieCard:hover {
+    transform: scale(1.04);
+}
+
+.MainMovieTitle {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.MovieImg {
+    border-radius: 5px;
+}

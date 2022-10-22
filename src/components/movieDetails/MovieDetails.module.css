@@ -1,0 +1,68 @@
+.Title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.MainMovieDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    border: 1px solid;
+    border-radius: 5px;
+    -webkit-box-shadow: 10px 10px 35px -12px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 10px 10px 35px -12px rgba(0, 0, 0, 1);
+    box-shadow: 10px 10px 35px -12px rgba(0, 0, 0, 1);
+    /*background: radial-gradient(circle farthest-corner at 50% 50%, rgba(90, 92, 106, 1) 0%, rgba(32, 45, 58, 1) 81.3%);*/
+    /* Created with https://www.css-gradient.com */
+    background: #C3DAEB;
+    background: -webkit-linear-gradient(top left, #C3DAEB, #136094);
+    background: -moz-linear-gradient(top left, #C3DAEB, #136094);
+    background: linear-gradient(to bottom right, #C3DAEB, #136094);
+}
+
+
+.ImgShortInfo {
+    display: flex;
+    margin-left: 10px;
+}
+
+.Img {
+    border-radius: 5px;
+    -webkit-box-shadow: 10px 10px 35px -12px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 10px 10px 35px -12px rgba(0, 0, 0, 1);
+    box-shadow: 10px 10px 35px -12px rgba(0, 0, 0, 1);
+    border: #626161 1px solid;
+}
+
+.ShortInfo {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.Overview {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-top: 5px;
+}
+
+.P {
+    margin-top: 4px;
+}
+
+.WrapMovieDetails {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.white .MainMovieDetails {
+    background: white;
+}
