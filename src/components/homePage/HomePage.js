@@ -15,7 +15,7 @@ export const HomePage = () => {
 
 
     useEffect(() => {
-        movieService.getAllPopularMovie(query.get('page')).then(({data}) => {
+        movieService.getAllMovie(query.get('page')).then(({data}) => {
             setMovies(data.results);
         })
     }, [query])
