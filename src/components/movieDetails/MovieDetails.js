@@ -24,7 +24,7 @@ export const MovieDetails = () => {
                 <h1 className={css.Title}>{movieDetails.title}</h1>
                 <div className={css.ImgShortInfo}>
                     <div>
-                        <img className={css.Img} src={`https://image.tmdb.org/t/p/w400/${movieDetails.poster_path}`}
+                        <img className={css.Img} src={`https://image.tmdb.org/t/p/w300/${movieDetails.poster_path}`}
                              alt={movieDetails.title}/>
                     </div>
                     <div className={css.ShortInfo}>
